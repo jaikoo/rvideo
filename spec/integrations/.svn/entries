@@ -1,0 +1,52 @@
+8
+
+dir
+39
+svn://rubyforge.org/var/svn/rvideo/trunk/spec/integrations
+svn://rubyforge.org/var/svn/rvideo
+
+
+
+2007-12-26T19:57:18.727851Z
+35
+jonhdahl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7f010bc7-d6f2-4c66-bf00-86cf88f46285
+
+transcoder_integration_spec.rb
+file
+
+
+
+
+2008-01-08T17:05:47.000000Z
+7a69f9b577728579992e2c7dda1272a8
+2007-12-26T19:57:18.727851Z
+35
+jonhdahl
+
+formats_spec.rb
+file
+
+
+
+
+2008-01-08T17:05:47.000000Z
+1c283d3899ad66a68f03ba7c1596c723
+2007-12-12T23:41:24.692755Z
+30
+jonhdahl
+

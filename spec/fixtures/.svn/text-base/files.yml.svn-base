@@ -1,0 +1,398 @@
+fancypants:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+
+    Seems that stream 0 comes from film source: 44100.00 (44100/1) -> 23.98 (24000/1001)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'files/fancypants-h264.mov':
+      Duration: 00:00:35.4, start: 0.000000, bitrate: 1980 kb/s
+      Stream #0.0(eng), 23.98 fps(r): Video: h264, yuv420p, 720x400
+      Stream #0.1(eng): Audio: aac, 44100 Hz, stereo
+    Must supply at least one output file
+kites:
+  response: |
+    FFmpeg version SVN-r6399, Copyright (c) 2000-2004 Fabrice Bellard
+    configuration:  --prefix=/opt/local --prefix=/opt/local --disable-vhook --mandir=/opt/local/share/man --extra-cflags=-DHAVE_LRINTF --extra-ldflags=-d -L/opt/local/lib --enable-gpl --enable-mp3lame --enable-libogg --enable-vorbis --enable-faac --enable-faad --enable-xvid --enable-x264 --enable-a52 --enable-dts 
+    libavutil version: 49.0.1
+    libavcodec version: 51.16.0
+    libavformat version: 50.5.0
+    built on Mar 29 2007 17:18:04, gcc: 4.0.1 (Apple Computer, Inc. build 5367)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'spec/files/kites.mp4':
+      Duration: 00:00:19.6, start: 0.000000, bitrate: 98 kb/s
+      Stream #0.0(und): Video: mpeg4, yuv420p, 176x144, 10.00 fps(r)
+      Stream #0.1(und): Audio: samr / 0x726D6173, 8000 Hz, mono
+    Must supply at least one output file
+kites2:
+  response: |
+    FFmpeg version SVN-r9102, Copyright (c) 2000-2007 Fabrice Bellard, et al.
+      configuration: --prefix=/opt/local --prefix=/opt/local --disable-vhook --mandir=/opt/local/share/man --enable-shared --enable-pthreads --disable-mmx --enable-gpl --enable-libmp3lame --enable-libogg --enable-libvorbis --enable-libtheora --enable-libfaac --enable-xvid --enable-x264 --enable-liba52
+      libavutil version: 49.4.0
+      libavcodec version: 51.40.4
+      libavformat version: 51.12.1
+      built on Dec 11 2007 12:00:30, gcc: 4.0.1 (Apple Inc. build 5465)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'spec/files/kites.mp4':
+      Duration: 00:00:19.6, start: 0.000000, bitrate: 98 kb/s
+      Stream #0.0(und): Video: mpeg4, yuv420p, 176x144, 10.00 fps(r)
+      Stream #0.1(und): Audio: samr / 0x726D6173, 8000 Hz, mono
+    Must supply at least one output file
+duck:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mp3, from '01 Come See The Duck.mp3':
+      Duration: 00:02:03.0, start: 0.000000, bitrate: 128 kb/s
+      Stream #0.0: Audio: mp3, 44100 Hz, stereo, 128 kb/s
+    Must supply at least one output file
+eiffel:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '03 Alec Eiffel 1.m4a':
+      Duration: 00:02:50.3, start: 0.000000, bitrate: 162 kb/s
+      Stream #0.0(und): Audio: aac, 44100 Hz, stereo
+    Must supply at least one output file
+mpeg1_957:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mpeg, from '957.mpg':
+      Duration: 00:00:22.6, start: 0.177778, bitrate: 808 kb/s
+      Stream #0.0[0x1c0]: Audio: mp2, 32000 Hz, mono, 32 kb/s
+      Stream #0.1[0x1e0], 25.00 fps(r): Video: mpeg1video, yuv420p, 320x240, 104857 kb/s
+    Must supply at least one output file
+buffy:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+
+    Seems that stream 0 comes from film source: 30000.00 (30000/1) -> 23.98 (24000/1001)
+    Input #0, avi, from 'buffy0501.avi':
+      Duration: 00:43:25.3, start: 0.000000, bitrate: 1266 kb/s
+      Stream #0.0, 23.98 fps(r): Video: mpeg4, yuv420p, 640x464
+      Stream #0.1: Audio: mp3, 48000 Hz, stereo, 128 kb/s
+    Must supply at least one output file
+chainsaw:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'chainsaw-xvid.mov':
+      Duration: 00:01:09.5, start: 0.000000, bitrate: 970 kb/s
+      Stream #0.0(eng), 23.98 fps(r): Video: mpeg4, yuv420p, 624x352
+      Stream #0.1(eng): Audio: mp2, 48000 Hz, stereo
+    Must supply at least one output file
+chairprank:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    [mov,mp4,m4a,3gp,3g2,mj2 @ 0x5597b8]negative ctts, ignoring
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'chair_prank.mov':
+      Duration: 00:00:36.6, start: 0.000000, bitrate: 26602 kb/s
+      Stream #0.0(eng): Audio: pcm_s16le, 48000 Hz, stereo, 1536 kb/s
+      Stream #0.1(eng), 29.97 fps(r): Video: mpeg2video, yuv420p, 1440x1080, 25000 kb/s
+    Must supply at least one output file
+fire_short:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    [mov,mp4,m4a,3gp,3g2,mj2 @ 0x5597b8]negative ctts, ignoring
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'fire-short.mov':
+      Duration: 00:00:10.0, start: 0.000000, bitrate: 23232 kb/s
+      Stream #0.0(eng): Audio: pcm_s16le, 48000 Hz, stereo, 1536 kb/s
+      Stream #0.1(eng), 29.97 fps(r): Video: h264, yuv420p, 1280x720
+    Must supply at least one output file
+fire_video_only:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'fire-short.video.mp4':
+      Duration: 00:00:10.0, start: 0.000000, bitrate: 506 kb/s
+      Stream #0.0(und), 29.97 fps(r): Video: h264, yuv420p, 320x180
+    Must supply at least one output file
+fire_audio_only:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'fire-short.audio.mp4':
+      Duration: 00:00:10.0, start: 0.000000, bitrate: 86 kb/s
+      Stream #0.0(und): Audio: aac, 48000 Hz, stereo
+    Must supply at least one output file
+fireproof:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'fireproof_apple_intermediate.mov':
+      Duration: 00:00:18.7, start: 0.000000, bitrate: 24281 kb/s
+      Stream #0.0(eng): Audio: pcm_s16be, 48000 Hz, mono, 768 kb/s
+      Stream #0.1(eng), 600.00 fps(r): Video: Apple Intermediate Codec, 1280x720
+    Must supply at least one output file
+jobjob:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+
+    Seems that stream 1 comes from film source: 600.00 (600/1) -> 59.75 (239/4)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'jobjob.mov':
+      Duration: 00:01:09.0, start: 0.000000, bitrate: 28847 kb/s
+      Stream #0.0(eng): Audio: aac, 44100 Hz, stereo
+      Stream #0.1(eng), 59.75 fps(r): Video: dvvideo, yuv411p, 720x480
+    Must supply at least one output file
+lecture:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, avi, from 'lecture.avi':
+      Duration: 01:01:20.4, start: 0.000000, bitrate: 996 kb/s
+      Stream #0.0, 29.97 fps(r): Video: msmpeg4, yuv420p, 320x240
+      Stream #0.1: Audio: mp3, 48000 Hz, mono, 64 kb/s
+    Must supply at least one output file
+nope:
+  respone: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mpeg, from 'nope_mpeg2.mpg':
+      Duration: 00:00:06.2, start: 0.375367, bitrate: 1972 kb/s
+      Stream #0.0[0x1e0], 23.98 fps(r): Video: mpeg2video, yuv420p, 720x400, 104857 kb/s
+      Stream #0.1[0x80]: Audio: ac3, 48000 Hz, stereo, 128 kb/s
+    Must supply at least one output file
+tiki:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'tiki.m4v':
+      Duration: 00:05:23.9, start: 0.000000, bitrate: 1631 kb/s
+      Stream #0.0(eng): Audio: aac, 44100 Hz, stereo
+      Stream #0.1(eng), 23.98 fps(r): Video: h264, yuv420p, 640x360
+    Must supply at least one output file
+ben:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'ben.3g2':
+      Duration: 00:01:04.8, start: 0.000000, bitrate: 138 kb/s
+      Stream #0.0(und): Audio: mp4a / 0x6134706D, 8000 Hz, stereo
+      Stream #0.1(und), 15.00 fps(r): Video: mpeg4, yuv420p, 320x240
+    Must supply at least one output file
+dan:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+
+    Seems that stream 0 comes from film source: 1000.00 (48000/48) -> 7.67 (23/3)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'dan.3gp':
+      Duration: 00:00:07.0, start: 0.000000, bitrate: 107 kb/s
+      Stream #0.0(und),  7.67 fps(r): Video: h263, yuv420p, 176x144
+      Stream #0.1(und): Audio: amr_nb, 8000 Hz, mono
+    Must supply at least one output file
+out:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+
+    Seems that stream 1 comes from film source: 1000.00 (1000/1) -> 15.00 (15/1)
+    Input #0, flv, from 'output.flv':
+      Duration: 00:00:03.5, bitrate: N/A
+      Stream #0.0: Audio: mp3, 22050 Hz, mono
+      Stream #0.1, 15.00 fps(r): Video: flv, yuv420p, 320x240
+    Must supply at least one output file
+truck:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+
+    Seems that stream 0 comes from film source: 15000.00 (30000/2) -> 15.00 (15/1)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'truck.3gpp':
+      Duration: 00:00:24.4, start: 0.000000, bitrate: 134 kb/s
+      Stream #0.0(und), 15.00 fps(r): Video: h263, yuv420p, 176x144
+      Stream #0.1(und): Audio: amr_nb, 8000 Hz, mono
+    Must supply at least one output file
+live_tv:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+
+    Seems that stream 1 comes from film source: 1000.00 (1000/1) -> 15.00 (15/1)
+    Input #0, asf, from '2LiveTV.wmv':
+      Duration: 00:00:54.4, start: 5.000000, bitrate: 310 kb/s
+      Stream #0.0: Audio: wmav2, 32000 Hz, stereo, 48 kb/s
+      Stream #0.1, 15.00 fps(r): Video: wmv2, yuv420p, 320x240
+    Must supply at least one output file
+jedermann:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+
+    Seems that stream 1 comes from film source: 1000.00 (1000/1) -> 30.00 (30/1)
+    Input #0, asf, from 'jedermann.wmv':
+      Duration: 00:00:29.9, start: 5.000000, bitrate: 887 kb/s
+      Stream #0.0: Audio: wmav2, 44100 Hz, stereo, 64 kb/s
+      Stream #0.1, 30.00 fps(r): Video: WMV3 / 0x33564D57, 320x240
+    Must supply at least one output file
+athf:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+
+    Seems that stream 1 comes from film source: 1000.00 (1000/1) -> 30.00 (30/1)
+    Input #0, asf, from 'athf2.wmv':
+      Duration: 00:00:21.1, start: 5.000000, bitrate: 1534 kb/s
+      Stream #0.0: Audio: wmav2, 44100 Hz, stereo, 64 kb/s
+      Stream #0.1, 30.00 fps(r): Video: WMVA / 0x41564D57, 640x480
+    Must supply at least one output file
+macgyver:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'macgyver.mov':
+      Duration: 00:00:50.2, start: 0.000000, bitrate: 1100 kb/s
+      Stream #0.0(eng), 23.98 fps(r): Video: msmpeg4, yuv420p, 512x384
+      Stream #0.1(eng): Audio: mp2, 44100 Hz, stereo
+    Must supply at least one output file
+text:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    TODO: Unknown format
+invalid:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+      configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+      libavutil version: 49.0.0
+      libavcodec version: 51.9.0
+      libavformat version: 50.4.0
+      built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'tmp/results/fancypants-ipod.mp4':
+      Duration: N/A, bitrate: N/A
+    Must supply at least one output file
+failing_ogg:
+  response: |
+    FFmpeg version SVN-r10656, Copyright (c) 2000-2007 Fabrice Bellard, et al.
+      configuration: --enable-libmp3lame --enable-libogg --enable-libvorbis --enable-liba52 --enable-libxvid --enable-libfaac --enable-libfaad --enable-libx264 --enable-libxvid --enable-pp --enable-shared --enable-gpl --enable-libtheora --enable-libfaadbin --enable-liba52bin --enable-libamr_nb --enable-libamr_wb --extra-ldflags=-L/usr/local/ffmpeg-src/ffmpeg/libavcodec/acfr16/ --extra-libs=-lacfr --enable-libacfr16
+      libavutil version: 49.5.0
+      libavcodec version: 51.44.0
+      libavformat version: 51.14.0
+      built on Oct 30 2007 15:33:08, gcc: 4.1.2 (Ubuntu 4.1.2-0ubuntu4)
+    Input #0, ogg, from 'tmp/37/PodcastPeople___Make_every_Podcast_Count__sweeper-19530.ogg':
+      Duration: N/A, start: 0.000000, bitrate: N/A
+      Stream #0.0: Audio: vorbis, 44100 Hz, stereo
+    Must supply at least one output file

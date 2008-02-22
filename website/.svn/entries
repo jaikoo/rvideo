@@ -1,0 +1,70 @@
+8
+
+dir
+39
+svn://rubyforge.org/var/svn/rvideo/trunk/website
+svn://rubyforge.org/var/svn/rvideo
+
+
+
+2008-01-17T22:13:21.386061Z
+39
+jonhdahl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7f010bc7-d6f2-4c66-bf00-86cf88f46285
+
+template.rhtml
+file
+
+
+
+
+2008-01-08T17:05:45.000000Z
+380697a7889ff154635d568411259f24
+2007-10-30T20:15:21.460908Z
+24
+jonhdahl
+
+index.txt
+file
+
+
+
+
+2008-01-08T17:05:45.000000Z
+f3780f341741d9fb169614c564f4b32d
+2007-10-30T20:15:21.460908Z
+24
+jonhdahl
+
+javascripts
+dir
+
+index.html
+file
+
+
+
+
+2008-01-28T17:41:42.000000Z
+dfee75c8c691b4a2b5ab7f16ec484810
+2008-01-17T22:13:21.386061Z
+39
+jonhdahl
+
+stylesheets
+dir
+

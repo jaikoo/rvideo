@@ -1,0 +1,40 @@
+8
+
+dir
+39
+svn://rubyforge.org/var/svn/rvideo/trunk/website/javascripts
+svn://rubyforge.org/var/svn/rvideo
+
+
+
+2007-09-27T15:51:23.004872Z
+13
+jonhdahl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7f010bc7-d6f2-4c66-bf00-86cf88f46285
+
+rounded_corners_lite.inc.js
+file
+
+
+
+
+2008-01-08T17:05:45.000000Z
+8aa2f2a7602686368840d36c517313cf
+2007-09-27T15:51:23.004872Z
+13
+jonhdahl
+

@@ -1,0 +1,52 @@
+hq_wmv:
+ extension: 'wmv'
+ command: |
+   ffmpeg -y -i $input_file$ -f asf -vcodec msmpeg4v2 -qscale 5 -pix_fmt yuv420p -acodec libmp3lame $original_fps$ -ar 44100 -psnr -s 720x480 $output_file$
+psp:
+  extension: 'mp4'
+  command: |
+    mencoder $input_file$ -o $output_file$ -oac lavc -ovc lavc -of lavf -lavcopts aglobal=1:vglobal=1:vcodec=mpeg4:acodec=aac:abitrate=64:vbitrate=400 -af lavcresample=24000 -vf harddup -lavfopts format=psp:i_certify_that_my_video_stream_does_not_use_b_frames -ofps 30000/1001
+one_pass:
+  extension: 'mp4'
+  command: |
+    ffmpeg -y -i $input_file$ -v 1 -threads 1 -vcodec h264 -b 500 -bt 175 -refs 2 -loop 1 -deblockalpha 0 -deblockbeta 0 -parti4x4 1 -partp8x8 1 -partb8x8 1 -me full -subq 6 -brdo 1 -me_range 21 -chroma 1 -slice 2  -level 13 -g 300 -keyint_min 30 -sc_threshold 40 -rc_eq 'blurCplx^(1-qComp)' -qcomp 0.7 -qmax 35 -cmp 1 -s 720x304 -acodec aac -ab 64 -ar 44100 -ac 1 -f mp4 $output_file$
+wmv_768:
+  extension: 'wmv'
+  command: |
+    ffmpeg -y -i $input_file$ -f asf -vcodec msmpeg4v2 -b 699k -pix_fmt yuv420p -ab 80k -acodec wmav2 -r 23.98 -ar 44100 -ac 2 -psnr -pass 1 -passlogfile $output_file$.log -s 480x360 $output_file$
+    ffmpeg -y -i $input_file$ -f asf -vcodec msmpeg4v2 -b 699k -pix_fmt yuv420p -ab 80k -acodec wmav2 -r 23.98 -ar 44100 -ac 2 -psnr -pass 2 -passlogfile $output_file$.log -s 480x360 $output_file$
+wmv_256:
+  extension: 'wmv'
+  command: |
+    ffmpeg -y -i $input_file$ -f asf -vcodec msmpeg4v2 -b 227k -pix_fmt yuv420p -ab 64k -acodec wmav2 -r 23.98 -ar 44100 -ac 2 -psnr -pass 1 -passlogfile $output_file$.log -s 320x240 $output_file$
+    ffmpeg -y -i $input_file$ -f asf -vcodec msmpeg4v2 -b 227k -pix_fmt yuv420p -ab 64k -acodec wmav2 -r 23.98 -ar 44100 -ac 2 -psnr -pass 2 -passlogfile $output_file$.log -s 320x240 $output_file$
+wmv_56:
+  extension: 'wmv'
+  command: |
+    ffmpeg -y -i $input_file$ -f asf -vcodec msmpeg4v2 -qscale 31 -pix_fmt yuv420p -ab 8k -acodec libmp3lame -r 11.98 -ar 8000 -ac 1 -psnr -s 160x120 $output_file$
+mob_56:
+  extension: '3gp'
+  command: |
+    ffmpeg -y -i $input_file$ -f 3gp -vcodec mpeg4 -b 44 -pix_fmt yuv420p -ab 5.9k -acodec libamr_nb -r 11.98 -ar 8000 -ac 1 -psnr -s 160x120 $output_file$
+flash_700:
+  extension: 'flv'
+  command: |
+    ffmpeg -y -i $input_file$ -f flv -b 700k -ab 80k -acodec mp3 -r 15 -ar 22050 -ac 2 -psnr -pass 1 -passlogfile $output_file$.log -s 480x360 $output_file$
+    ffmpeg -y -i $input_file$ -f flv -b 700k -ab 80k -acodec mp3 -r 15 -ar 22050 -ac 2 -psnr -pass 2 -passlogfile $output_file$.log -s 480x360 $output_file$
+    flvtool2 -U $output_file$
+flash_300:
+  extension: 'flv'
+  command: |
+    ffmpeg -y -i $input_file$ -f flv -b 300k -ab 64k -acodec mp3 -r 15 -ar 22050 -ac 2 -psnr -pass 1 -passlogfile $output_file$.log -s 320x240 $output_file$
+    ffmpeg -y -i $input_file$ -f flv -b 300k -ab 64k -acodec mp3 -r 15 -ar 22050 -ac 2 -psnr -pass 2 -passlogfile $output_file$.log -s 320x240 $output_file$
+    flvtool2 -U $output_file$
+qt_500:
+  extension: 'mov'
+  command: |
+    ffmpeg -y -i $input_file$ -f mov -vcodec mpeg4 -b 453k -ab 48k -acodec libmp3lame -r 15 -ar 44100 -ac 2 -psnr -pass 1 -passlogfile $output_file$.log -s 320x240 $output_file$
+    ffmpeg -y -i $input_file$ -f mov -vcodec mpeg4 -b 453k -ab 48k -acodec libmp3lame -r 15 -ar 44100 -ac 2 -psnr -pass 2 -passlogfile $output_file$.log -s 320x240 $output_file$
+qt_300:
+  extension: 'mov'
+  command: |
+    ffmpeg -y -i $input_file$ -f mov -vcodec mpeg4 -b 253k -ab 40k -acodec libmp3lame -r 15 -ar 44100 -ac 2 -psnr -pass 1 -passlogfile $output_file$.log -s 240x180 $output_file$
+    ffmpeg -y -i $input_file$ -f mov -vcodec mpeg4 -b 253k -ab 40k -acodec libmp3lame -r 15 -ar 44100 -ac 2 -psnr -pass 2 -passlogfile $output_file$.log -s 240x180 $output_file$

@@ -1,0 +1,64 @@
+8
+
+dir
+39
+svn://rubyforge.org/var/svn/rvideo/trunk/spec
+svn://rubyforge.org/var/svn/rvideo
+
+
+
+2008-01-17T20:40:08.854726Z
+38
+jonhdahl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+7f010bc7-d6f2-4c66-bf00-86cf88f46285
+
+files
+dir
+
+units
+dir
+
+integrations
+dir
+
+fixtures
+dir
+
+spec_helper.rb
+file
+
+
+
+
+2008-01-08T17:05:47.000000Z
+648a9c1dc41d4f42802329bcc651c23d
+2007-12-12T23:41:24.692755Z
+30
+jonhdahl
+
+spec.opts
+file
+
+
+
+
+2008-01-08T17:05:47.000000Z
+98816db4da6eb411365f6513048aeb6b
+2007-09-27T15:51:23.004872Z
+13
+jonhdahl
+

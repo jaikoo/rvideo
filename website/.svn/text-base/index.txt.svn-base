@@ -1,0 +1,142 @@
+h1. Ruby Video Processing
+
+h1. &#x2192; 'rvideo'
+
+
+h2. What
+
+RVideo is a Ruby library inspects and processes video and audio files by 
+providing an interface to free Unix tools like ffmpeg.
+
+h2. Installing
+
+Installation is a little involved. First, install the gem:
+
+<pre syntax="ruby">sudo gem install rvideo</pre>
+
+Next, install ffmpeg and (possibly) other related libraries. This is
+documented elsewhere on the web, and can be a headache. If you are on a Mac,
+the Macports build is reasonably good (though not perfect). Install with:
+
+  <pre>sudo port install ffmpeg</pre>
+
+Or, for a better build (recommended), add additional video- and audio-related
+libraries, like this:
+
+  <pre>sudo port install ffmpeg +lame +libogg +vorbis +faac +faad +xvid +x264 +a52</pre>
+  
+Most package management systems include a build of ffmpeg, but many include a
+poor build. So you may need to compile from scratch.
+
+If you want to create Flash Video files, also install flvtool2:
+
+  <pre>sudo gem install flvtool2</pre>
+
+Once ffmpeg and RVideo are installed, you're set. 
+
+h2. The basics
+
+<pre>
+file = RVideo::Inspector.new(:file => "#{FILE_PATH}/filename.mp4")
+file.video_codec  # => mpeg4
+file.audio_codec  # => aac
+file.resolution   # => 320x240
+</pre>
+
+<pre>
+command = "ffmpeg -i $input_file -vcodec xvid -s $resolution$ $output_file$"
+options = {
+  :input_file => "#{FILE_PATH}/filename.mp4", 
+  :output_file => "#{FILE_PATH}/processed_file.mp4",
+  :resolution => "640x480"
+  }
+
+transcoder = RVideo::Transcoder.new
+
+transcoder.execute(command, options)
+
+transcoder.processed.video_codec # => xvid
+</pre>
+
+h2. Demonstration of usage
+
+To inspect a file, initialize an RVideo file inspector object. See the 
+documentation for details.
+
+A few examples:
+
+<pre>file = RVideo::Inspector.new(:file => "#{APP_ROOT}/files/input.mp4")</pre>
+  
+<pre>file = RVideo::Inspector.new(:raw_response => @existing_response)</pre>
+  
+<pre>
+file = RVideo::Inspector.new(:file => "#{APP_ROOT}/files/input.mp4",
+  :ffmpeg_binary => "#{APP_ROOT}/bin/ffmpeg")
+</pre>
+
+<pre>
+file.fps        # => "29.97"
+file.duration   # => "00:05:23.4"
+</pre>
+
+To transcode a video, initialize a Transcoder object.
+
+<pre>transcoder = RVideo::Transcoder.new</pre>
+
+Then pass a command and valid options to the execute method.
+
+<pre>
+recipe = "ffmpeg -i $input_file$ -ar 22050 -ab 64 -f flv -r 29.97 -s"
+recipe += " $resolution$ -y $output_file$"
+recipe += "\nflvtool2 -U $output_file$"
+begin
+  transcoder.execute(recipe, {:input_file => "/path/to/input.mp4",
+    :output_file => "/path/to/output.flv", :resolution => "640x360"})
+rescue TranscoderError => e
+  puts "Unable to transcode file: #{e.class} - #{e.message}"
+end
+</pre>
+
+If the job succeeds, you can access the metadata of the input and output
+files with:
+
+<pre>
+transcoder.original     # RVideo::Inspector object
+transcoder.processed    # RVideo::Inspector object
+</pre>
+
+Even if the file is processed, it may still have problems. RVideo
+will populate an errors array if the duration of the processed video
+differs from the duration of the original video, or if the processed
+file is unreadable.
+
+h2. Contribute
+
+Contribute to RVideo! If you want to help out, there are a few things you can 
+do.
+
+* Use, test, and submit bugs/patches
+* We need a RVideo::Tools::Mencoder class to add mencoder support.
+* Other tool classes would be great - On2, mp4box, Quicktime (?), etc.
+* Submit other fixes, features, optimizations, and refactorings
+
+Read the "8 steps for fixing other people's code":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/ and for section "8b: Submit patch to Google Groups":http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/#8b-google-groups, use the Google Group above.
+
+The trunk repository is <code>svn://rubyforge.org/var/svn/rvideo/trunk</code> for anonymous access.
+
+
+h2. Forum
+
+"http://groups.google.com/group/rvideo":http://groups.google.com/group/rvideo
+
+h2. Zencoder (Shameless Plug)
+
+Zencoder is a commercial video transcoder built by Slantwise Design. Zencoder uses RVideo for its video processing, but adds file queuing, distributed transcoding, a web-based transcoder dashboard, and more. See "http://zencoder.tv":http://zencoder.tv or "http://slantwisedesign.com":http://slantwisedesign.com for more.
+
+h2. License
+
+This code is free to use under the terms of the MIT license. 
+
+h2. Contact
+
+Comments are welcome. Send an email to Jonathan Dahl at jon [at] slantwisedesign.

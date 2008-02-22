@@ -1,0 +1,28 @@
+darwinports:
+  response: |
+    FFmpeg version SVN-r6399, Copyright (c) 2000-2004 Fabrice Bellard
+    configuration:  --prefix=/opt/local --prefix=/opt/local --disable-vhook --mandir=/opt/local/share/man --extra-cflags=-DHAVE_LRINTF --extra-ldflags=-d -L/opt/local/lib --enable-gpl --enable-mp3lame --enable-libogg --enable-vorbis --enable-faac --enable-faad --enable-xvid --enable-x264 --enable-a52 --enable-dts 
+    libavutil version: 49.0.1
+    libavcodec version: 51.16.0
+    libavformat version: 50.5.0
+    built on Mar 29 2007 17:18:04, gcc: 4.0.1 (Apple Computer, Inc. build 5367)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'spec/files/kites.mp4':
+      Duration: 00:00:19.6, start: 0.000000, bitrate: 98 kb/s
+      Stream #0.0(und): Video: mpeg4, yuv420p, 176x144, 10.00 fps(r)
+      Stream #0.1(und): Audio: samr / 0x726D6173, 8000 Hz, mono
+    Must supply at least one output file
+    
+osx_intel_1:
+  response: |
+    FFmpeg version CVS, Copyright (c) 2000-2004 Fabrice Bellard
+    Mac OSX universal build for ffmpegX
+    configuration:  --enable-memalign-hack --enable-mp3lame --enable-gpl --disable-vhook --disable-ffplay --disable-ffserver --enable-a52 --enable-xvid --enable-faac --enable-faad --enable-amr_nb --enable-amr_wb --enable-pthreads --enable-x264 
+    libavutil version: 49.0.0
+    libavcodec version: 51.9.0
+    libavformat version: 50.4.0
+    built on Apr 15 2006 04:58:19, gcc: 4.0.1 (Apple Computer, Inc. build 5250)
+    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'spec/files/kites.mp4':
+      Duration: 00:00:19.6, start: 0.000000, bitrate: 98 kb/s
+      Stream #0.0(und), 10.00 fps(r): Video: mpeg4, yuv420p, 176x144
+      Stream #0.1(und): Audio: amr_nb, 8000 Hz, mono
+    Must supply at least one output file

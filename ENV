@@ -1,0 +1,100 @@
+RVideo is only as good as the tools it uses. To make the best use of RVideo, follow these instructions.
+
+1. First, install dependencies.
+
+wget http://www3.mplayerhq.hu/MPlayer/releases/codecs/all-20061022.tar.bz2 (Mencoder complete codec pack)
+wget http://easynews.dl.sourceforge.net/sourceforge/lame/lame-3.97.tar.gz (LAME mp3 encoder)
+a (Ogg)
+sudo gem install flvtool2 (flvtool2 flv packager)
+
+unzip...
+
+svn checkout svn://svn.mplayerhq.hu/ffmpeg/trunk ffmpeg
+svn checkout svn://svn.mplayerhq.hu/mplayer/trunk mplayer
+
+-. Move mplayer codecs.
+
+sudo mkdir /usr/local/lib/codecs/
+mv essential-20061022/* /usr/local/lib/codecs/
+chmod -R 755 /usr/local/lib/codecs/
+
+3. Build
+add /usr/local/lib to /etc/ld.so.conf
+yum install libncurses-devel
+
+For most:
+./configure --enable-shared
+make
+sudo make install
+
+FAAC
+-- sudo yum install automake, autoconf, libtool, m4, gcc-c++
+sh bootstrap
+./configure
+make
+sudo make install
+
+FAAD
+(report of bugs - http://www.webhostingtalk.com/archive/index.php/t-565563.html and http://wiki.linuxfromscratch.org/blfs/wiki/faad2)
+
+sed -i 's/       /\t/' Makefile.am &&
+sed -i 's/NULL/0/' common/mp4v2/{mp4property.h,rtphint.h} &&
+sed -i '/dd(m/ s/^v/static v/' common/mp4ff/mp4ffint.h
+autoreconf -vif
+./configure && make && sudo make install
+(maybe add --mp4v2 to ./configure?)
+
+XVID
+wget http://downloads.xvid.org/downloads/xvidcore-1.1.3.tar.gz
+./configure etc. from within xvid/build/generic
+
+A52
+wget http://liba52.sourceforge.net/files/a52dec-0.7.4.tar.gz
+./configure etc.
+
+AMR
+???
+wget http://www.3gpp.org/ftp/Specs/archive/26_series/26.104/26104-700.zip
+wget http://www.3gpp.org/ftp/Specs/archive/26_series/26.204/26204-700.zip
+cd ffmpeg/libavcodec/
+mkdir amr_float
+mkdir amrwb_float
+cd amr_float
+unzip ../../../26104-700.zip
+unzip 26104-700_ANSI_C_source_code.zip
+cd ../amrwb_float/
+unzip ../../../26204-700.zip
+unzip 26204-700_ANSI-C_source_code.zip
+** not working. 
+
+X264
+svn co svn://svn.videolan.org/x264/trunk x264
+sudo yum install yasm # for mmx/sse - not sure if these are supported
+./configure --enable-pthread --enable-shared # error adding  --enable-mp4-output
+make && sudo make install
+
+FFMPEG
+./configure --enable-libmp3lame --enable-libogg --enable-libvorbis --enable-liba52 --enable-libxvid --enable-libfaac --enable-libfaad  --enable-libx264 --enable-xvid --enable-pp --enable-shared --enable-gpl
+
+Sources:
+http://vexxhost.com/blog/2007/03/03/installing-ffmpeg-ffmpeg-php-mplayer-mencoder-flv2tool-lame-mp3-encoder-libogg-%E2%80%93-the-easy-way/
+http://cihilt.com/book/export/html/49
+
+TODO
+wget http://downloads.xiph.org/releases/flac/flac-1.2.0.tar.gz (FLAC) *
+faac
+faad
+xvid
+x264
+mp4box
+wget http://downloads.xiph.org/releases/theora/libtheora-1.0alpha7.tar.bz2 (theora) *
+wget http://downloads.xiph.org/releases/vorbis/libvorbis-1.2.0.tar.gz (Vorbis) (Gives error - LD_LIBRARY_PATH something)
+
+liba52 dlopened           no
+libamr-nb support         no
+libamr-wb support         no
+libdc1394 support         no
+libfaad dlopened          no
+libgsm enabled            no
+libnut enabled            no
+libtheora enabled         no
